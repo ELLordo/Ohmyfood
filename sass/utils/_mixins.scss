@@ -38,6 +38,39 @@
     align-items: center;
     color: white;
     margin-right: 20px;
-    margin-left: -12px;
-    
+    margin-left: -12px;   
+}
+
+@mixin restaurant {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 230px;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.425);
+    flex-flow: column;
+}
+
+@mixin restauranti {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border:0;
+    border-radius: 20px 20px 0 0 ;
+}
+
+@mixin new {
+    display: block;
+    position: absolute;
+    right:5%;
+    box-sizing: border-box;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: $color-tertiaire;
+    color: darken($color-tertiaire , $amount: 40%);
+    padding-top: 3px;
+    border-radius: 5px ;
 }
