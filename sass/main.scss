@@ -62,6 +62,12 @@ body
 .choix
 {
     margin-top: 50px;
+        h3
+        {
+            font-size: x-large;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
         p
         {
             font-size:medium;
@@ -71,6 +77,7 @@ body
         {
             display: flex;
             justify-content: center;
+            margin-top: 20px
         }
         &__1__btn
         {
@@ -81,6 +88,25 @@ body
             @include num-btn;
         }
         &__1__btn__txt
+        {
+            margin-left: 20px;
+        }
+        &__2
+        {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px
+        }
+        &__2__btn
+        {
+            @include fonctionnement;
+            background-color: rgb(244, 237, 254)
+        }
+        &__2__btn__num
+        {
+            @include num-btn;
+        }
+        &__2__btn__txt
         {
             margin-left: 20px;
         }
