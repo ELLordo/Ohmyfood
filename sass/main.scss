@@ -144,6 +144,23 @@ body
     {
         @include new
     }
+    &__1__main__titre
+    {
+        font-weight: bold;
+        margin-top: -5px;
+        margin-left: 15px;
+    }
+    &__1__main__txt
+    {
+        margin-top: -28px;
+        margin-left: 15px;
+    }
+    &__1__main__like
+    {
+        display: block;
+        position: relative;
+        color: blue;
+    }
     
     
 } 
