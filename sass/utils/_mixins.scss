@@ -10,7 +10,34 @@
     border: 0;
     border-radius: 30px 30px 30px 30px;
     box-shadow: 2px 2px 8px grey;
-    background-color: $color-secondaire;
+    background: linear-gradient(to top,black,2%,$color-secondaire);
     font-size: larger;
+}
 
+@mixin fonctionnement {
+    display: flex;
+    box-sizing: border-box;
+    width: 95%;
+    height: 70px;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px grey;
+    background-color: rgb(247, 246, 246);
+    padding: 3px;
+    align-items: center; 
+}
+
+@mixin num-btn {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: $color-primaire;
+    align-items: center;
+    color: white;
+    margin-right: 20px;
+    margin-left: -12px;
+    
 }

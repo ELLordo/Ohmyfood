@@ -6,8 +6,6 @@
 body
 {
     font-family: 'Roboto','Times New Roman', Times, serif;
-    margin-right: 0;
-    margin-left: 0;
 }
 .main-title
 {
@@ -60,5 +58,30 @@ body
         {
             background-color: adjust-hue($color-secondaire, $degrees: 10%);
         }
-
+}
+.choix
+{
+    margin-top: 50px;
+        p
+        {
+            font-size:medium;
+            font-weight: bold
+        }
+        &__1
+        {
+            display: flex;
+            justify-content: center;
+        }
+        &__1__btn
+        {
+            @include fonctionnement;
+        }
+        &__1__btn__num
+        {
+            @include num-btn;
+        }
+        &__1__btn__txt
+        {
+            margin-left: 20px;
+        }
 }
