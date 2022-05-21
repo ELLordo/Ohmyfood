@@ -2,10 +2,6 @@
   font-family: "Shrikhand";
   src: url("Police/shrikhand/build/Shrikhand-Regular.ttf");
 }
-@font-face {
-  font-family: 'Roboto';
-  src: url("Police/roboto/Roboto-Regular.ttf");
-}
 body {
   font-family: 'Roboto','Times New Roman', Times, serif;
 }
@@ -30,6 +26,7 @@ body {
   justify-content: center;
   margin-top: -20px;
   box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.382) inset;
+  cursor: pointer;
 }
 .main-btn__img {
   margin-right: 10px;
@@ -66,6 +63,7 @@ body {
   box-shadow: 2px 2px 8px grey;
   background: linear-gradient(to top, black, 2%, #FF79DA);
   font-size: larger;
+  cursor: pointer;
 }
 .pres__btn:hover {
   background-color: #ff79c4;
@@ -99,6 +97,7 @@ body {
   background-color: #f7f6f6;
   padding: 3px;
   align-items: center;
+  cursor: pointer;
 }
 .choix__1__btn__num {
   display: flex;
@@ -133,6 +132,7 @@ body {
   padding: 3px;
   align-items: center;
   background-color: #f4edfe;
+  cursor: pointer;
 }
 .choix__2__btn__num {
   display: flex;
@@ -161,35 +161,29 @@ body {
 }
 .resto__1 {
   display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-.resto__1 a {
-  text-decoration: none;
-  color: black;
-}
-.resto__1__main {
-  display: flex;
   box-sizing: border-box;
   width: 100%;
-  height: 240px;
+  height: 300px;
   border: 0;
   border-radius: 20px;
   box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.425);
-  flex-flow: column;
+  flex-flow: column wrap;
+  margin-top: 30px;
+  cursor: pointer;
 }
-.resto__1__main__img {
+.resto__1__img {
   display: flex;
   width: 100%;
-  height: 68%;
+  height: 80%;
   object-fit: cover;
   border: 0;
   border-radius: 20px 20px 0 0;
 }
-.resto__1__main__new {
+.resto__1__new {
   display: block;
   position: absolute;
   right: 5%;
+  top: 144%;
   box-sizing: border-box;
   width: 100px;
   height: 30px;
@@ -199,19 +193,22 @@ body {
   padding-top: 3px;
   border-radius: 5px;
 }
-.resto__1__main__titre {
-  font-weight: bold;
-  margin-top: -5px;
-  margin-left: 15px;
+.resto__1 p {
+  margin: 15px;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  width: fit-content;
 }
-.resto__1__main__txt {
-  margin-top: -28px;
-  margin-left: 15px;
+.resto__1 h4 {
+  margin: 15px;
+  margin-block-end: 5px;
+  margin-block-start: 10px;
+  width: fit-content;
 }
-.resto__1__main__like {
-  display: block;
-  position: relative;
-  color: blue;
+.resto__1__like {
+  position: absolute;
+  right: 5%;
+  top: 181%;
 }
 
 /*# sourceMappingURL=style.css.map */

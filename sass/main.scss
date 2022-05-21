@@ -5,6 +5,7 @@
 
 body
 {
+    
     font-family: 'Roboto','Times New Roman', Times, serif;
 }
 .main-title
@@ -28,7 +29,8 @@ body
     align-items: center;
     justify-content: center;
     margin-top: -20px;
-    box-shadow:3px 3px 8px rgba(128, 128, 128, 0.382) inset;  
+    box-shadow:3px 3px 8px rgba(128, 128, 128, 0.382) inset;
+    cursor: pointer;  
     &__img{
         margin-right: 10px;
     }
@@ -39,6 +41,7 @@ body
     flex-flow: column nowrap;
     margin-top: 20px;
     text-align: center;
+    
         &__main
         {
             box-sizing: border-box;
@@ -53,7 +56,9 @@ body
         }
         &__btn
         {
-            @include btn}
+            @include btn;
+        cursor: pointer;
+    }
         &__btn:hover 
         {
             background-color: adjust-hue($color-secondaire, $degrees: 10%);
@@ -62,6 +67,7 @@ body
 .choix
 {
     margin-top: 100px;
+    
         h3
         {
             font-size: x-large;
@@ -77,11 +83,13 @@ body
         {
             display: flex;
             justify-content: center;
-            margin-top: 30px
+            margin-top: 30px;
+            
         }
         &__1__btn
         {
             @include fonctionnement;
+            cursor: pointer;
         }
         &__1__btn__num
         {
@@ -95,12 +103,14 @@ body
         {
             display: flex;
             justify-content: center;
-            margin-top: 30px
+            margin-top: 30px;
+            
         }
         &__2__btn
         {
             @include fonctionnement;
-            background-color: rgb(244, 237, 254)
+            background-color: rgb(244, 237, 254);
+            cursor: pointer;
         }
         &__2__btn__num
         {
@@ -115,52 +125,45 @@ body
 .resto
 {
     margin-top: 100px;
+    
     h3
     {
         font-size: x-large;
-        font-weight: bold;
+        font-weight:bold;
         margin-bottom: 10px;
     }
     &__1
-    {
-        display: flex;
-        justify-content: center;
+    {   
+        @include restaurant;
         margin-top: 30px;
+        cursor: pointer;
     }
-    &__1 a 
-    {
-        text-decoration: none;
-        color: black;
-    }
-    &__1__main
-    {
-        @include restaurant
-    }
-    &__1__main__img
+    &__1__img
     {
         @include restauranti
     }
-    &__1__main__new
+    &__1__new
     {
         @include new
     }
-    &__1__main__titre
+    &__1 p
     {
-        font-weight: bold;
-        margin-top: -5px;
-        margin-left: 15px;
+       margin: 15px;
+       margin-block-end: 0;
+       margin-block-start: 0;
+       width: fit-content;
     }
-    &__1__main__txt
+    &__1 h4
     {
-        margin-top: -28px;
-        margin-left: 15px;
+        margin: 15px;
+        margin-block-end: 5px;
+        margin-block-start: 10px;
+        width: fit-content;
     }
-    &__1__main__like
+    &__1__like
     {
-        display: block;
-        position: relative;
-        color: blue;
+        position: absolute;
+        right: 5%;
+        top: 181%;
     }
-    
-    
 } 
