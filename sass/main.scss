@@ -208,8 +208,20 @@ body
 footer
 {
     background-color: rgb(53, 53, 53);
-    &__title
+    color: white;
+    box-sizing: border-box;
+    width: auto;
+    height: 170px;
+    ul 
     {
-        font-size: medium;
+        list-style-type: none;
+
+    }
+    h5
+    {
+        font-size: large;
+        font-family: 'Shrikhand','Times New Roman', Times, serif;
+        padding-top: 25px;
+        padding-left: 35px;
     }
 }

@@ -281,9 +281,19 @@ body {
 
 footer {
   background-color: #353535;
+  color: white;
+  box-sizing: border-box;
+  width: auto;
+  height: 170px;
 }
-footer__title {
-  font-size: medium;
+footer ul {
+  list-style-type: none;
+}
+footer h5 {
+  font-size: large;
+  font-family: 'Shrikhand','Times New Roman', Times, serif;
+  padding-top: 25px;
+  padding-left: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */
