@@ -132,6 +132,11 @@ body
         font-weight:bold;
         margin-bottom: 10px;
     }
+    &__1 a 
+    {
+        text-decoration: none;
+        color:black;
+    }
     &__1
     {   
         @include restaurant;
@@ -170,6 +175,11 @@ body
         color: $color-secondaire;
     }
 } 
+.resto__2__img
+{
+    @include restauranti;
+    height: 230px
+}
 .resto__2__new
 {
     @include new;
