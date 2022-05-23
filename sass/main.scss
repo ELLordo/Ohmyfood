@@ -162,8 +162,54 @@ body
     }
     &__1__like
     {
-        position: absolute;
-        right: 5%;
-        top: 181%;
+        @include like
+    }
+    &__1__like:active
+    {
+        background-clip:text;
+        color: $color-secondaire;
     }
 } 
+.resto__2__new
+{
+    @include new;
+    top: 195%;
+}
+.resto__2__like
+{
+    @include like;
+    top:230%;
+}
+.resto__2__like:active
+{
+    background-clip:text;
+    color: $color-secondaire;
+}
+.resto__3__like
+{
+    @include like;
+    top: 279%;
+}
+.resto__3__like:active
+{
+    background-clip:text;
+    color: $color-secondaire;
+}
+.resto__4__like
+{
+    @include like;
+    top: 329%;
+}
+.resto__4__like:active
+{
+    background-clip:text;
+    color: $color-secondaire;
+}
+footer
+{
+    background-color: rgb(53, 53, 53);
+    &__title
+    {
+        font-size: medium;
+    }
+}

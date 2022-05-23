@@ -75,3 +75,11 @@
     padding-top: 3px;
     border-radius: 5px ;
 }
+@mixin like {
+    position: absolute;
+        right: 6%;
+        top: 180%;
+        background-color: white;
+        border: 0;
+        font-size: x-large;
+}
