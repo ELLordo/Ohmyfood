@@ -23,19 +23,29 @@
 .back__img
 {
     display: flex;
+    z-index: 0;
+    background: url("../restaurants/la_palette_du_gout.jpg");
     box-sizing: border-box;
     width: 100%;
     height: 240px;
     object-fit: cover;
+    margin-top: -15px;
+    
 }
 .selection
 {
+    display: block;
+    position: relative;
+    z-index: 10;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
     border: 0;
     border-radius: 20px 20px 0 0 ;
     background-color: rgb(246, 246, 246);
+    margin-top: -33px;
+    padding-top: 15px;
+    margin-left: 0;
     &__main
     {   
         display: inline-flex;
@@ -43,9 +53,34 @@
         width: 100%;
         text-align: center;
         flex-flow: row nowrap;
+        margin-left: 10px;
     }
     &__title
     {
         font-family: 'Shrikhand','Times New Roman', Times, serif;
+        margin-left: 10px
+    }
+    &__like
+    {
+        @include like;
+        top: 53%;
+        background-color: rgb(246, 246, 246);
+    }
+    &__like:active
+    {
+        background-clip:text;
+        color: $color-secondaire;
+    }
+    p 
+    {
+        margin-left: 10px;
+    }
+    h3 
+    {
+        margin-left: 10px;
+    }
+    &__E
+    {
+        @include plat
     }
 }
