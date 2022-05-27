@@ -3,6 +3,7 @@
 @import "./utils/mixins";
 @import "./base/typography";
 @import "./pages/menu.gout";
+@import "./pages/menu_enchan";
 
 body
 {
@@ -136,7 +137,7 @@ body
     &__1
     {   
         @include restaurant;
-        margin-top: 30px;
+        margin-bottom: 30px;
         cursor: pointer;
     }
     &__1__img
@@ -179,12 +180,12 @@ body
 .resto__2__new
 {
     @include new;
-    top: 195%;
+    top: 190%;
 }
 .resto__2__like
 {
     @include like;
-    top:230%;
+    top:225%;
 }
 .resto__2__like:active
 {
@@ -194,7 +195,7 @@ body
 .resto__3__like
 {
     @include like;
-    top: 279%;
+    top: 274%;
 }
 .resto__3__like:active
 {
@@ -204,7 +205,7 @@ body
 .resto__4__like
 {
     @include like;
-    top: 329%;
+    top: 324%;
 }
 .resto__4__like:active
 {

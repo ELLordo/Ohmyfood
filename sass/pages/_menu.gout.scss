@@ -23,14 +23,11 @@
 .back__img
 {
     display: flex;
-    z-index: 0;
-    background: url("../restaurants/la_palette_du_gout.jpg");
     box-sizing: border-box;
     width: 100%;
     height: 240px;
     object-fit: cover;
-    margin-top: -15px;
-    
+    margin-top: -15px; 
 }
 .selection
 {
@@ -63,7 +60,7 @@
     &__like
     {
         @include like;
-        top: 8%;
+        top: 3%;
         background-color: rgb(246, 246, 246);
     }
     &__like:active

@@ -26,8 +26,6 @@
 
 .back__img {
   display: flex;
-  z-index: 0;
-  background: url("../restaurants/la_palette_du_gout.jpg");
   box-sizing: border-box;
   width: 100%;
   height: 240px;
@@ -64,11 +62,11 @@
 .selection__like {
   position: absolute;
   right: 6%;
-  top: 180%;
+  top: 175%;
   background-color: white;
   border: 0;
   font-size: x-large;
-  top: 8%;
+  top: 3%;
   background-color: #f6f6f6;
 }
 .selection__like:active {
@@ -142,6 +140,87 @@
 
 footer h5 {
   margin-block-start: 0;
+}
+
+.back__img3 {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  margin-top: -100px;
+  margin-bottom: -120px;
+  overflow: hidden;
+}
+
+.header__3 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 1;
+  width: 100%;
+  height: 80px;
+  padding-top: 20px;
+  margin-top: -20px;
+  background-color: white;
+}
+
+.header__3 a {
+  text-decoration: none;
+  color: black;
+}
+
+.header__3 p {
+  font-size: x-large;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 0;
+}
+
+.header__3 h1 {
+  margin-left: -10px;
+}
+
+.selection2 {
+  display: block;
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
+  width: 100%;
+  height: 1220px;
+  border: 0;
+  border-radius: 20px 20px 0 0;
+  background-color: #f6f6f6;
+  margin-top: -33px;
+  padding-top: 15px;
+  margin-left: 0;
+}
+.selection2__main {
+  display: inline-flex;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  flex-flow: row nowrap;
+  margin-left: 10px;
+}
+.selection2__title {
+  font-family: 'Shrikhand','Times New Roman', Times, serif;
+  margin-left: 10px;
+}
+.selection2__like {
+  position: absolute;
+  right: 6%;
+  top: 175%;
+  background-color: white;
+  border: 0;
+  font-size: x-large;
+  top: 3%;
+  background-color: #f6f6f6;
+}
+.selection2__like:active {
+  background-clip: text;
+  color: #FF79DA;
 }
 
 body {
@@ -314,7 +393,7 @@ body {
   border-radius: 20px;
   box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.425);
   flex-flow: column wrap;
-  margin-top: 30px;
+  margin-bottom: 30px;
   cursor: pointer;
 }
 .resto__1__img {
@@ -354,7 +433,7 @@ body {
 .resto__1__like {
   position: absolute;
   right: 6%;
-  top: 180%;
+  top: 175%;
   background-color: white;
   border: 0;
   font-size: x-large;
@@ -387,17 +466,17 @@ body {
   color: #278870;
   padding-top: 3px;
   border-radius: 5px;
-  top: 195%;
+  top: 190%;
 }
 
 .resto__2__like {
   position: absolute;
   right: 6%;
-  top: 180%;
+  top: 175%;
   background-color: white;
   border: 0;
   font-size: x-large;
-  top: 230%;
+  top: 225%;
 }
 
 .resto__2__like:active {
@@ -408,11 +487,11 @@ body {
 .resto__3__like {
   position: absolute;
   right: 6%;
-  top: 180%;
+  top: 175%;
   background-color: white;
   border: 0;
   font-size: x-large;
-  top: 279%;
+  top: 274%;
 }
 
 .resto__3__like:active {
@@ -423,11 +502,11 @@ body {
 .resto__4__like {
   position: absolute;
   right: 6%;
-  top: 180%;
+  top: 175%;
   background-color: white;
   border: 0;
   font-size: x-large;
-  top: 329%;
+  top: 324%;
 }
 
 .resto__4__like:active {
