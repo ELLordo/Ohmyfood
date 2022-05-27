@@ -287,7 +287,8 @@ body {
   cursor: pointer;
 }
 .pres__btn:hover {
-  background-color: #ff79c4;
+  background-color: #ff7997;
+  box-shadow: 2px 2px 20px grey;
 }
 
 .choix {
@@ -529,6 +530,10 @@ footer h5 {
   font-family: 'Shrikhand','Times New Roman', Times, serif;
   padding-top: 25px;
   padding-left: 35px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

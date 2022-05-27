@@ -58,7 +58,8 @@ body
     }
         &__btn:hover 
         {
-            background-color: adjust-hue($color-secondaire, $degrees: 10%);
+            background-color: adjust-hue($color-secondaire, $degrees: 30%);
+            box-shadow: 2px 2px 20px grey;
         }
 }
 .choix
@@ -230,5 +231,10 @@ footer
         font-family: 'Shrikhand','Times New Roman', Times, serif;
         padding-top: 25px;
         padding-left: 35px;
+    }
+    a 
+    {
+        text-decoration: none;
+        color:white;
     }
 }
