@@ -58,12 +58,12 @@
     &__title
     {
         font-family: 'Shrikhand','Times New Roman', Times, serif;
-        margin-left: 10px
+        margin-left: 10px;
     }
     &__like
     {
         @include like;
-        top: 53%;
+        top: 8%;
         background-color: rgb(246, 246, 246);
     }
     &__like:active
@@ -71,16 +71,49 @@
         background-clip:text;
         color: $color-secondaire;
     }
+}
+.entree
+{
+    
+    &__E
+    {
+        @include plat;
+    }
+    &__L
+    {
+        box-sizing: border-box;
+        width: 30px;
+        margin: -14px 0 0 15px;
+        border-bottom: 3px solid $color-tertiaire;
+    }
     p 
     {
+        margin-top: -10px;
         margin-left: 10px;
+        font-size: small;
     }
     h3 
     {
-        margin-left: 10px;
+        margin-left: 15px;
+        font-weight: normal;
+        font-size: 1em;
     }
-    &__E
+    h4 
     {
-        @include plat
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-top: 8px;
+    }
+    &__E__txt
+    {
+        flex-flow: column;
+    }
+    &__E__prix
+    {
+        align-self: flex-end;
+        margin-right: 20px;
+        margin-bottom: 12px;
+        font-weight: bold;
     }
 }
