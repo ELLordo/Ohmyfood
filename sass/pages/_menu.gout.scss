@@ -39,7 +39,7 @@
     z-index: 10;
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    height: 1120px;
     border: 0;
     border-radius: 20px 20px 0 0 ;
     background-color: rgb(246, 246, 246);
@@ -74,7 +74,6 @@
 }
 .entree
 {
-    
     &__E
     {
         @include plat;
@@ -90,7 +89,7 @@
     {
         margin-top: -10px;
         margin-left: 10px;
-        font-size: small;
+        font-size: medium;
     }
     h3 
     {
@@ -116,4 +115,17 @@
         margin-bottom: 12px;
         font-weight: bold;
     }
+    &__btn
+    {
+        @include btn;
+        margin: auto;
+        margin-top: 30px;
+        width: 60%;
+        height: 55px;
+        padding-inline-end: 20px;
+    }
+}
+footer h5
+{
+    margin-block-start: 0;
 }
