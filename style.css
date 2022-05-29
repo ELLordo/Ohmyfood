@@ -520,10 +520,14 @@ footer {
   color: white;
   box-sizing: border-box;
   width: auto;
-  height: 170px;
+  height: 200px;
 }
 footer ul {
   list-style-type: none;
+  margin-top: -10px;
+}
+footer li {
+  margin-top: 10px;
 }
 footer h5 {
   font-size: large;
@@ -534,6 +538,11 @@ footer h5 {
 footer a {
   text-decoration: none;
   color: white;
+}
+
+.fa-solid {
+  font-size: 0.8em;
+  margin-right: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

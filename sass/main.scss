@@ -219,11 +219,15 @@ footer
     color: white;
     box-sizing: border-box;
     width: auto;
-    height: 170px;
+    height: 200px;
     ul 
     {
         list-style-type: none;
-
+        margin-top: -10px;
+    }
+    li 
+    {
+        margin-top: 10px;
     }
     h5
     {
@@ -237,4 +241,9 @@ footer
         text-decoration: none;
         color:white;
     }
+}
+.fa-solid
+{
+        font-size: 0.8em;
+        margin-right: 15px;
 }
