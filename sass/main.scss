@@ -58,7 +58,8 @@ body
     }
         &__btn:hover 
         {
-            background-color: adjust-hue($color-secondaire, $degrees: 10%);
+            background-color: adjust-hue($color-secondaire, $degrees: 30%);
+            box-shadow: 2px 2px 20px grey;
         }
 }
 .choix
@@ -218,11 +219,15 @@ footer
     color: white;
     box-sizing: border-box;
     width: auto;
-    height: 170px;
+    height: 200px;
     ul 
     {
         list-style-type: none;
-
+        margin-top: -10px;
+    }
+    li 
+    {
+        margin-top: 10px;
     }
     h5
     {
@@ -231,4 +236,14 @@ footer
         padding-top: 25px;
         padding-left: 35px;
     }
+    a 
+    {
+        text-decoration: none;
+        color:white;
+    }
+}
+.fa-solid
+{
+        font-size: 0.8em;
+        margin-right: 15px;
 }
