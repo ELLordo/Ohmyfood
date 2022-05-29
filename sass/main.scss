@@ -167,12 +167,21 @@ body
     {
         @include like
     }
-    &__1__like:active
-    {
-        background-clip:text;
-        color: $color-secondaire;
-    }
 } 
+.fa-heart 
+{
+    color: #FFF;
+    text-shadow: 0px 0px 6px  #000;
+}
+.fa-heart::before 
+{    
+    font-weight: bold;
+    transition: color 1s ease-out;
+}
+.fa-heart:hover::before{
+    color: $color-secondaire;
+    cursor: pointer;
+}
 .resto__2__img
 {
     @include restauranti;
@@ -181,7 +190,7 @@ body
 .resto__2__new
 {
     @include new;
-    top: 190%;
+    top: 193%;
 }
 .resto__2__like
 {

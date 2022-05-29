@@ -439,9 +439,20 @@ body {
   border: 0;
   font-size: x-large;
 }
-.resto__1__like:active {
-  background-clip: text;
+
+.fa-heart {
+  color: #FFF;
+  text-shadow: 0px 0px 6px  #000;
+}
+
+.fa-heart::before {
+  font-weight: bold;
+  transition: color 1s ease-out;
+}
+
+.fa-heart:hover::before {
   color: #FF79DA;
+  cursor: pointer;
 }
 
 .resto__2__img {
@@ -467,7 +478,7 @@ body {
   color: #278870;
   padding-top: 3px;
   border-radius: 5px;
-  top: 190%;
+  top: 193%;
 }
 
 .resto__2__like {
