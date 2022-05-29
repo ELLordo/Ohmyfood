@@ -1,0 +1,128 @@
+.header__2
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.header__2 a 
+{
+    text-decoration: none;
+    color: black;
+}
+.header__2 p
+{
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 0;
+}
+.header__2 h1
+{
+    margin-left: -10px;
+}
+.back__img
+{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    margin-top: -15px; 
+}
+.selection
+{
+    display: block;
+    position: relative;
+    z-index: 10;
+    box-sizing: border-box;
+    width: 100%;
+    height: 1120px;
+    border: 0;
+    border-radius: 20px 20px 0 0 ;
+    background-color: rgb(246, 246, 246);
+    margin-top: -33px;
+    padding-top: 15px;
+    margin-left: 0;
+    &__main
+    {   
+        display: inline-flex;
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+        flex-flow: row nowrap;
+        margin-left: 10px;
+    }
+    &__title
+    {
+        font-family: 'Shrikhand','Times New Roman', Times, serif;
+        margin-left: 10px;
+    }
+    &__like
+    {
+        @include like;
+        top: 3%;
+        background-color: rgb(246, 246, 246);
+    }
+    &__like:active
+    {
+        background-clip:text;
+        color: $color-secondaire;
+    }
+}
+.entree
+{
+    &__E
+    {
+        @include plat;
+    }
+    &__L
+    {
+        box-sizing: border-box;
+        width: 30px;
+        margin: -14px 0 0 15px;
+        border-bottom: 3px solid $color-tertiaire;
+    }
+    p 
+    {
+        margin-top: -10px;
+        margin-left: 10px;
+        font-size: medium;
+    }
+    h3 
+    {
+        margin-left: 15px;
+        font-weight: normal;
+        font-size: 1em;
+    }
+    h4 
+    {
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-top: 8px;
+    }
+    &__E__txt
+    {
+        flex-flow: column;
+    }
+    &__E__prix
+    {
+        align-self: flex-end;
+        margin-right: 20px;
+        margin-bottom: 12px;
+        font-weight: bold;
+    }
+    &__btn
+    {
+        @include btn;
+        margin: auto;
+        margin-top: 30px;
+        width: 60%;
+        height: 55px;
+        padding-inline-end: 20px;
+    }
+}
+footer h5
+{
+    margin-block-start: 0;
+}
