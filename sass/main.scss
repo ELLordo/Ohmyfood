@@ -178,7 +178,8 @@ body
     font-weight: bold;
     transition: color 1s ease-out;
 }
-.fa-heart:hover::before{
+.fa-heart:hover::before
+{
     color: $color-secondaire;
     cursor: pointer;
 }

@@ -137,6 +137,10 @@
   height: 55px;
   padding-inline-end: 20px;
 }
+.entree__btn:hover {
+  background-color: #ff7997;
+  box-shadow: 2px 2px 20px grey;
+}
 
 footer h5 {
   margin-block-start: 0;

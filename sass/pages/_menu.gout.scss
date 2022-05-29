@@ -121,6 +121,11 @@
         height: 55px;
         padding-inline-end: 20px;
     }
+    &__btn:hover 
+        {
+            background-color: adjust-hue($color-secondaire, $degrees: 30%);
+            box-shadow: 2px 2px 20px grey;
+        }
 }
 footer h5
 {
