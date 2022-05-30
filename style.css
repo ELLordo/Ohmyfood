@@ -1,3 +1,32 @@
+@keyframes platH {
+  0% {
+    width: 350px;
+  }
+  15% {
+    border-radius: 0;
+  }
+  100% {
+    width: 300px;
+    border-radius: 0;
+  }
+}
+@keyframes platI {
+  0% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+  to {
+    transform: rotate(360deg) center;
+  }
+}
 @font-face {
   font-family: "Shrikhand";
   src: url("Police/shrikhand/build/Shrikhand-Regular.ttf");
@@ -69,15 +98,11 @@
   top: 3%;
   background-color: #f6f6f6;
 }
-.selection__like:active {
-  background-clip: text;
-  color: #FF79DA;
-}
 
 .entree__E {
   display: flex;
   box-sizing: border-box;
-  width: 330px;
+  width: 350px;
   height: 70px;
   border-radius: 20px;
   background-color: white;
@@ -86,11 +111,34 @@
   margin-top: 20px;
   margin-left: 3%;
 }
+.entree__E:hover {
+  animation: platH 3s;
+}
 .entree__L {
   box-sizing: border-box;
   width: 30px;
   margin: -14px 0 0 15px;
   border-bottom: 3px solid #99E2D0;
+}
+.entree__clic {
+  position: fixed;
+  z-index: -1;
+  background-color: #99E2D0;
+  width: 80px;
+  height: 70px;
+  left: 320px;
+  border-radius: 0 20px 20px 0;
+}
+.entree__clic i {
+  color: #fff;
+  font-weight: bold;
+  font-size: large;
+  margin: 30px;
+  padding-left: 20px;
+}
+.entree :hover .entree__clic i {
+  animation: platI 2s ease-in-out 0.2s;
+  animation: spin 3s linear infinite;
 }
 .entree p {
   margin-top: -10px;
@@ -113,7 +161,7 @@
 }
 .entree__E__prix {
   align-self: flex-end;
-  margin-right: 20px;
+  margin-right: 0px;
   margin-bottom: 12px;
   font-weight: bold;
 }
@@ -136,10 +184,6 @@
   width: 60%;
   height: 55px;
   padding-inline-end: 20px;
-}
-.entree__btn:hover {
-  background-color: #ff7997;
-  box-shadow: 2px 2px 20px grey;
 }
 
 footer h5 {

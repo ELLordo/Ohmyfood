@@ -63,17 +63,17 @@
         top: 3%;
         background-color: rgb(246, 246, 246);
     }
-    &__like:active
-    {
-        background-clip:text;
-        color: $color-secondaire;
-    }
 }
 .entree
 {
+    
     &__E
     {
         @include plat;
+    }
+    &__E:hover
+    {
+        animation: platH 3s;
     }
     &__L
     {
@@ -82,6 +82,28 @@
         margin: -14px 0 0 15px;
         border-bottom: 3px solid $color-tertiaire;
     }
+    &__clic
+    {
+        position: fixed;
+        z-index: -1;
+        background-color: #99E2D0;
+        width: 80px;
+        height: 70px;
+        left: 320px;
+        border-radius: 0 20px 20px 0;
+    }
+    &__clic i 
+    {   color: #fff;
+        font-weight: bold;
+        font-size: large;
+        margin: 30px;
+        padding-left: 20px;
+    }
+    :hover .entree__clic i
+        {
+            animation: platI 2s ease-in-out 0.2s ;
+            animation: spin 3s linear infinite;
+        } 
     p 
     {
         margin-top: -10px;
@@ -108,7 +130,7 @@
     &__E__prix
     {
         align-self: flex-end;
-        margin-right: 20px;
+        margin-right: 0px;
         margin-bottom: 12px;
         font-weight: bold;
     }
@@ -121,11 +143,6 @@
         height: 55px;
         padding-inline-end: 20px;
     }
-    &__btn:hover 
-        {
-            background-color: adjust-hue($color-secondaire, $degrees: 30%);
-            box-shadow: 2px 2px 20px grey;
-        }
 }
 footer h5
 {

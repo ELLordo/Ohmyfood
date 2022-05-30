@@ -97,7 +97,7 @@
 {
     display: flex;
     box-sizing: border-box;
-    width: 330px;
+    width: 350px;
     height: 70px;
     border-radius: 20px ;
     background-color: white;
@@ -105,5 +105,37 @@
     justify-content: space-between;
     margin-top: 20px;
     margin-left: 3%;
+}
 
+@keyframes platH {
+    0%{
+        width: 350px;
+    }
+    15%{
+        border-radius: 0;
+    }
+    100%{
+        width: 300px ;
+        border-radius: 0;
+    }
+}
+
+@keyframes platI
+{
+    0%{
+        transform:  translateX(10px);
+    }
+    100%{
+        transform:  translateX(0px); 
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+        transform-origin: center;
+    }
+    to {
+        transform: rotate(360deg) center;
+        
+    }
 }

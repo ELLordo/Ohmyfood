@@ -1,0 +1,74 @@
+html:<div class="loader">
+        <img src="images/animation/istockphoto-1217451921-612x612.jpeg" alt="poele">
+       <div class="oeuf">
+           <span class="loader__blanc"></span>
+            <span class="loader__jaune"></span>
+       </div>
+    </div>
+css:
+/.loader 
+{
+    background-color: #FFF;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: parti 4s linear 4s ;
+    img 
+    {
+        width: 80%;
+        height: 60%;
+    }
+    &__blanc
+    {
+        background-color:rgba(242, 241, 241, 0.911);
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 30%;
+        z-index: 1;
+    }
+    &__jaune
+    {
+        background-color: yellow;
+        border-radius: 50%;
+        width: 33%;
+        height: 33%;
+        position: absolute;
+        z-index: 2;
+    }
+}
+.oeuf
+{
+    position: absolute;
+    right: 30%;
+    align-items: center;
+    top: 40%;
+    width: 80px;
+    height: 80px;
+    animation: egg 3s cubic-bezier(.96,-0.01,1,.96);
+}
+@keyframes egg{
+    0%{
+        transform:scale(0),;opacity: 0;
+    }
+    99%{
+        transform: scale(1);opacity: 1;
+        
+    }
+    100%{
+        opacity: 0;;
+    }
+}
+@keyframes parti
+{
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(-99999px);
+    }
+}//*
