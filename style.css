@@ -21,10 +21,9 @@
 @keyframes spin {
   from {
     transform: rotate(0deg);
-    transform-origin: center;
   }
   to {
-    transform: rotate(360deg) center;
+    transform: rotate(360deg);
   }
 }
 @font-face {
