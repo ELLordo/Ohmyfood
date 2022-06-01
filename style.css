@@ -35,10 +35,10 @@
     transform: translateX(10px);
     opacity: 0;
   }
-  40% {
+  60% {
     opacity: 0;
   }
-  50% {
+  70% {
     opacity: 1;
   }
   100% {
@@ -51,10 +51,10 @@
     transform: rotate(180deg);
     opacity: 0;
   }
-  40% {
+  60% {
     opacity: 0;
   }
-  50% {
+  70% {
     opacity: 1;
   }
   100% {
@@ -209,8 +209,7 @@
   color: #fff;
   font-weight: bold;
   font-size: x-large;
-  padding: 20px;
-  overflow: hidden;
+  margin: 20px;
 }
 .entree :hover .entree__clic i {
   animation: platI 1s ease-in-out 0.2s;
@@ -398,6 +397,7 @@ footer h5 {
 }
 
 body {
+  overflow-x: hidden;
   font-family: 'Roboto','Times New Roman', Times, serif;
 }
 
