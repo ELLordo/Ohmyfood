@@ -4,11 +4,11 @@
     opacity: 1;
   }
   20% {
-    width: 80px;
+    width: 70px;
     opacity: 1;
   }
   80% {
-    width: 80px;
+    width: 70px;
     opacity: 1;
   }
   100% {
@@ -33,9 +33,17 @@
 @keyframes platI {
   0% {
     transform: translateX(10px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
   100% {
     transform: translateX(0px);
+    opacity: 1;
   }
 }
 @keyframes spin {
@@ -172,6 +180,9 @@
 .entree__E:hover p {
   animation: slidep 5s ease-in-out both alternate;
 }
+.entree__E:hover h4 {
+  animation: slidep 5s ease-in-out both alternate;
+}
 .entree__E__entier {
   display: flex;
   box-sizing: border-box;
@@ -199,6 +210,7 @@
   font-weight: bold;
   font-size: x-large;
   padding: 20px;
+  overflow: hidden;
 }
 .entree :hover .entree__clic i {
   animation: platI 1s ease-in-out 0.2s;
@@ -224,6 +236,9 @@
 .entree h4 {
   margin-left: 10px;
   font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   margin-top: 8px;
 }
 .entree__E__txt {

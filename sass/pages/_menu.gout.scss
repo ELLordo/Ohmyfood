@@ -84,6 +84,10 @@
     {
         animation: slidep 5s ease-in-out both alternate;
     }
+    &__E:hover h4
+    {
+        animation: slidep 5s ease-in-out both alternate;
+    }
     &__E__entier
     {   display: flex;
         box-sizing: border-box;
@@ -113,6 +117,7 @@
         font-weight: bold;
         font-size: x-large;
         padding: 20px;
+        overflow: hidden;
     }
     :hover .entree__clic i
         {
@@ -143,7 +148,9 @@
     {
         margin-left: 10px;
         font-weight: bold;
-        
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
         margin-top: 8px;
     }
     &__E__txt
