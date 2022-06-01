@@ -550,7 +550,7 @@ body {
 .resto__1__img {
   display: flex;
   width: 100%;
-  height: 80%;
+  height: 75%;
   object-fit: cover;
   border: 0;
   border-radius: 20px 20px 0 0;
@@ -606,7 +606,7 @@ body {
 .resto__2__img {
   display: flex;
   width: 100%;
-  height: 80%;
+  height: 75%;
   object-fit: cover;
   border: 0;
   border-radius: 20px 20px 0 0;
