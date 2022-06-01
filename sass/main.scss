@@ -141,6 +141,16 @@ body
         margin-bottom: 30px;
         cursor: pointer;
     }
+    &__1__all
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__1__txt
+    {
+        display: flex;
+        flex-flow: column nowrap;
+    }
     &__1__img
     {
         @include restauranti
@@ -165,7 +175,8 @@ body
     }
     &__1__like
     {
-        @include like
+        @include like;
+        margin-right: 10px;
     }
 } 
 .fa-heart 
@@ -193,36 +204,7 @@ body
     @include new;
     top: 193%;
 }
-.resto__2__like
-{
-    @include like;
-    top:225%;
-}
-.resto__2__like:active
-{
-    background-clip:text;
-    color: $color-secondaire;
-}
-.resto__3__like
-{
-    @include like;
-    top: 274%;
-}
-.resto__3__like:active
-{
-    background-clip:text;
-    color: $color-secondaire;
-}
-.resto__4__like
-{
-    @include like;
-    top: 324%;
-}
-.resto__4__like:active
-{
-    background-clip:text;
-    color: $color-secondaire;
-}
+
 footer
 {
     background-color: rgb(53, 53, 53);

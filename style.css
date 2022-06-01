@@ -104,34 +104,34 @@
   width: 100%;
   text-align: center;
   flex-flow: row nowrap;
-  margin-left: 10px;
+  justify-content: space-around;
 }
 .selection__title {
   font-family: 'Shrikhand','Times New Roman', Times, serif;
   margin-left: 10px;
 }
 .selection__like {
-  position: absolute;
-  right: 6%;
-  top: 175%;
   background-color: white;
   border: 0;
   font-size: x-large;
-  top: 3%;
   background-color: #f6f6f6;
 }
 
+.entree__all {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
 .entree__E {
   display: flex;
   flex-flow: column wrap;
   box-sizing: border-box;
-  width: 100%;
+  width: 90%;
   height: 70px;
   border-radius: 20px;
   background-color: white;
-  align-items: center;
+  align-content: space-between;
   margin-top: 20px;
-  margin-left: 3%;
 }
 .entree__E:hover .entree__clic {
   animation: slide 1s ease-in-out forwards alternate;
@@ -171,7 +171,7 @@
 .entree p {
   margin-top: -10px;
   margin-left: 10px;
-  font-size: medium;
+  font-size: small;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -287,20 +287,16 @@ footer h5 {
   width: 100%;
   text-align: center;
   flex-flow: row nowrap;
-  margin-left: 10px;
+  justify-content: space-around;
 }
 .selection2__title {
   font-family: 'Shrikhand','Times New Roman', Times, serif;
   margin-left: 10px;
 }
 .selection2__like {
-  position: absolute;
-  right: 6%;
-  top: 175%;
   background-color: white;
   border: 0;
   font-size: x-large;
-  top: 3%;
   background-color: #f6f6f6;
 }
 .selection2__like:active {
@@ -482,6 +478,14 @@ body {
   margin-bottom: 30px;
   cursor: pointer;
 }
+.resto__1__all {
+  display: flex;
+  justify-content: space-between;
+}
+.resto__1__txt {
+  display: flex;
+  flex-flow: column nowrap;
+}
 .resto__1__img {
   display: flex;
   width: 100%;
@@ -517,12 +521,10 @@ body {
   width: fit-content;
 }
 .resto__1__like {
-  position: absolute;
-  right: 6%;
-  top: 175%;
   background-color: white;
   border: 0;
   font-size: x-large;
+  margin-right: 10px;
 }
 
 .fa-heart {
@@ -564,51 +566,6 @@ body {
   padding-top: 3px;
   border-radius: 5px;
   top: 193%;
-}
-
-.resto__2__like {
-  position: absolute;
-  right: 6%;
-  top: 175%;
-  background-color: white;
-  border: 0;
-  font-size: x-large;
-  top: 225%;
-}
-
-.resto__2__like:active {
-  background-clip: text;
-  color: #FF79DA;
-}
-
-.resto__3__like {
-  position: absolute;
-  right: 6%;
-  top: 175%;
-  background-color: white;
-  border: 0;
-  font-size: x-large;
-  top: 274%;
-}
-
-.resto__3__like:active {
-  background-clip: text;
-  color: #FF79DA;
-}
-
-.resto__4__like {
-  position: absolute;
-  right: 6%;
-  top: 175%;
-  background-color: white;
-  border: 0;
-  font-size: x-large;
-  top: 324%;
-}
-
-.resto__4__like:active {
-  background-clip: text;
-  color: #FF79DA;
 }
 
 footer {

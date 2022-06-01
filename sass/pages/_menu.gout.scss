@@ -50,7 +50,8 @@
         width: 100%;
         text-align: center;
         flex-flow: row nowrap;
-        margin-left: 10px;
+        justify-content: space-around;
+        
     }
     &__title
     {
@@ -60,13 +61,17 @@
     &__like
     {
         @include like;
-        top: 3%;
         background-color: rgb(246, 246, 246);
     }
 }
 .entree
 {
-    
+    &__all
+    {
+        display: flex;
+    flex-flow: column;
+    align-items: center;
+    }
     &__E
     {
         @include plat;
@@ -114,7 +119,7 @@
     {
         margin-top: -10px;
         margin-left: 10px;
-        font-size: medium;
+        font-size: small;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
