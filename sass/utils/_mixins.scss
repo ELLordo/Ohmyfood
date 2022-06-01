@@ -123,6 +123,22 @@
     }
 }
 
+@keyframes slidep
+{
+    0%{
+        width: 100%;
+    }
+    20%{
+        width: 95%;
+    }
+    80%{
+        width: 95%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
 @keyframes platI
 {
     0%{

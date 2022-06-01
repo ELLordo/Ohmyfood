@@ -76,10 +76,13 @@
     {
         @include plat;
     }
-    &__E:hover .entree__clic
+    &__E:hover .entree__clic 
     {
         animation: slide 5s ease-in-out both alternate;
-        
+    }
+    &__E:hover p 
+    {
+        animation: slidep 5s ease-in-out both alternate;
     }
     &__E__entier
     {   display: flex;
@@ -125,7 +128,6 @@
         overflow: hidden;
         white-space: nowrap;
         color: #787878;
-        
     }
     h3 
     {
