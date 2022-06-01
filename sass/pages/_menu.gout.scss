@@ -125,7 +125,7 @@
         overflow: hidden;
         white-space: nowrap;
         color: #787878;
-        width: 96%;
+        
     }
     h3 
     {
@@ -135,13 +135,13 @@
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap; 
-        width: 98%;
+       
     }
     h4 
     {
         margin-left: 10px;
         font-weight: bold;
-        font-size: 1.1em;
+        
         margin-top: 8px;
     }
     &__E__txt
@@ -164,6 +164,51 @@
         height: 55px;
         padding-inline-end: 20px;
     }
+}
+.entree__E1,.entree__E2,.entree__E3,.entree__E4,.entree__E5,.entree__E6,.entree__E7,.entree__E8,.entree__E9,.entree__E10
+{
+    cursor: pointer;
+    animation: apparition-menu 1s ease-in-out both ;
+}
+.entree__E1
+{
+    animation-delay: 10ms;
+}
+.entree__E2
+{
+    animation-delay: 90ms;
+}
+.entree__E3
+{
+    animation-delay: 180ms;
+}
+.entree__E4
+{
+    animation-delay: 270ms;
+}
+.entree__E5
+{
+    animation-delay: 360ms;
+}
+.entree__E6
+{
+    animation-delay: 450ms;
+}
+.entree__E7
+{
+    animation-delay: 540ms;
+}
+.entree__E8
+{
+    animation-delay: 630ms;
+}
+.entree__E9
+{
+    animation-delay: 720ms;
+}
+.entree__E10
+{
+    animation-delay: 810ms;
 }
 footer h5
 {
