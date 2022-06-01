@@ -109,10 +109,17 @@
         width: 2%;
         opacity: 1;
     }
-    100%{
+    20%{
         width: 80px;
         opacity: 1;
-        
+    }
+    80%{
+        width: 80px;
+        opacity: 1;
+    }
+    100%{
+        width: 2%;
+        opacity: 0;
     }
 }
 

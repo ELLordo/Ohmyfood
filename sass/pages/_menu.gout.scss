@@ -78,7 +78,8 @@
     }
     &__E:hover .entree__clic
     {
-        animation: slide 1s ease-in-out forwards alternate;
+        animation: slide 5s ease-in-out both alternate;
+        
     }
     &__E__entier
     {   display: flex;

@@ -3,9 +3,17 @@
     width: 2%;
     opacity: 1;
   }
-  100% {
+  20% {
     width: 80px;
     opacity: 1;
+  }
+  80% {
+    width: 80px;
+    opacity: 1;
+  }
+  100% {
+    width: 2%;
+    opacity: 0;
   }
 }
 @keyframes platI {
@@ -134,7 +142,7 @@
   margin-top: 20px;
 }
 .entree__E:hover .entree__clic {
-  animation: slide 1s ease-in-out forwards alternate;
+  animation: slide 5s ease-in-out both alternate;
 }
 .entree__E__entier {
   display: flex;
