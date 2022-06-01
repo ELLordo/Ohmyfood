@@ -141,6 +141,16 @@ body
         margin-bottom: 30px;
         cursor: pointer;
     }
+    &__1__all
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__1__txt
+    {
+        display: flex;
+        flex-flow: column nowrap;
+    }
     &__1__img
     {
         @include restauranti
@@ -165,14 +175,25 @@ body
     }
     &__1__like
     {
-        @include like
-    }
-    &__1__like:active
-    {
-        background-clip:text;
-        color: $color-secondaire;
+        @include like;
+        margin-right: 10px;
     }
 } 
+.fa-heart 
+{
+    color: #FFF;
+    text-shadow: 0px 0px 6px  #000;
+}
+.fa-heart::before 
+{    
+    font-weight: bold;
+    transition: color 1s ease-out;
+}
+.fa-heart:hover::before
+{
+    color: $color-secondaire;
+    cursor: pointer;
+}
 .resto__2__img
 {
     @include restauranti;
@@ -181,38 +202,9 @@ body
 .resto__2__new
 {
     @include new;
-    top: 190%;
+    top: 193%;
 }
-.resto__2__like
-{
-    @include like;
-    top:225%;
-}
-.resto__2__like:active
-{
-    background-clip:text;
-    color: $color-secondaire;
-}
-.resto__3__like
-{
-    @include like;
-    top: 274%;
-}
-.resto__3__like:active
-{
-    background-clip:text;
-    color: $color-secondaire;
-}
-.resto__4__like
-{
-    @include like;
-    top: 324%;
-}
-.resto__4__like:active
-{
-    background-clip:text;
-    color: $color-secondaire;
-}
+
 footer
 {
     background-color: rgb(53, 53, 53);
@@ -246,4 +238,23 @@ footer
 {
         font-size: 0.8em;
         margin-right: 15px;
+}
+.loader
+{
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    background-color: $color-tertiaire;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: disparition 3s 2s both;
+    h2 
+    {
+        color: $color-primaire;
+        font-size:2em;
+        font-family: 'Shrikhand','Times New Roman', Times, serif;
+        animation: slideTitre 2.5s ;
+    }
 }

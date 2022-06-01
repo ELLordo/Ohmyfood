@@ -1,3 +1,72 @@
+@keyframes slide {
+  0% {
+    width: 2%;
+    opacity: 1;
+  }
+  20% {
+    width: 80px;
+    opacity: 1;
+  }
+  80% {
+    width: 80px;
+    opacity: 1;
+  }
+  100% {
+    width: 2%;
+    opacity: 0;
+  }
+}
+@keyframes platI {
+  0% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes disparition {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+@keyframes slideTitre {
+  from {
+    margin-bottom: 100%;
+  }
+  to {
+    margin-bottom: 0%;
+  }
+}
+@keyframes apparition-menu {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @font-face {
   font-family: "Shrikhand";
   src: url("Police/shrikhand/build/Shrikhand-Regular.ttf");
@@ -53,38 +122,45 @@
   width: 100%;
   text-align: center;
   flex-flow: row nowrap;
-  margin-left: 10px;
+  justify-content: space-around;
 }
 .selection__title {
   font-family: 'Shrikhand','Times New Roman', Times, serif;
   margin-left: 10px;
 }
 .selection__like {
-  position: absolute;
-  right: 6%;
-  top: 175%;
   background-color: white;
   border: 0;
   font-size: x-large;
-  top: 3%;
   background-color: #f6f6f6;
 }
-.selection__like:active {
-  background-clip: text;
-  color: #FF79DA;
-}
 
+.entree__all {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
 .entree__E {
   display: flex;
+  flex-flow: column wrap;
   box-sizing: border-box;
-  width: 330px;
+  width: 90%;
   height: 70px;
   border-radius: 20px;
   background-color: white;
-  align-items: center;
-  justify-content: space-between;
+  align-content: space-between;
   margin-top: 20px;
-  margin-left: 3%;
+  justify-content: center;
+}
+.entree__E:hover .entree__clic {
+  animation: slide 5s ease-in-out both alternate;
+}
+.entree__E__entier {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 70px;
+  flex-flow: column wrap;
 }
 .entree__L {
   box-sizing: border-box;
@@ -92,30 +168,55 @@
   margin: -14px 0 0 15px;
   border-bottom: 3px solid #99E2D0;
 }
+.entree__clic {
+  position: relative;
+  background-color: #99E2D0;
+  opacity: 0;
+  width: 0;
+  height: 70px;
+  border-radius: 0 20px 20px 0;
+}
+.entree__clic i {
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  font-size: x-large;
+  padding: 20px;
+}
+.entree :hover .entree__clic i {
+  animation: platI 1s ease-in-out 0.2s;
+  animation: spin 1s linear;
+}
 .entree p {
   margin-top: -10px;
   margin-left: 10px;
-  font-size: medium;
+  font-size: small;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #787878;
 }
 .entree h3 {
   margin-left: 15px;
   font-weight: normal;
   font-size: 1em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .entree h4 {
   margin-left: 10px;
   font-weight: bold;
-  font-size: 1.1em;
   margin-top: 8px;
 }
 .entree__E__txt {
   flex-flow: column;
 }
 .entree__E__prix {
-  align-self: flex-end;
-  margin-right: 20px;
-  margin-bottom: 12px;
-  font-weight: bold;
+  margin-top: 20px;
+  padding-right: 15px;
+  margin-right: 0;
+  transition: margin-right 2s;
 }
 .entree__btn {
   display: flex;
@@ -136,6 +237,51 @@
   width: 60%;
   height: 55px;
   padding-inline-end: 20px;
+}
+
+.entree__E1, .entree__E2, .entree__E3, .entree__E4, .entree__E5, .entree__E6, .entree__E7, .entree__E8, .entree__E9, .entree__E10 {
+  cursor: pointer;
+  animation: apparition-menu 1s ease-in-out both;
+}
+
+.entree__E1 {
+  animation-delay: 10ms;
+}
+
+.entree__E2 {
+  animation-delay: 90ms;
+}
+
+.entree__E3 {
+  animation-delay: 180ms;
+}
+
+.entree__E4 {
+  animation-delay: 270ms;
+}
+
+.entree__E5 {
+  animation-delay: 360ms;
+}
+
+.entree__E6 {
+  animation-delay: 450ms;
+}
+
+.entree__E7 {
+  animation-delay: 540ms;
+}
+
+.entree__E8 {
+  animation-delay: 630ms;
+}
+
+.entree__E9 {
+  animation-delay: 720ms;
+}
+
+.entree__E10 {
+  animation-delay: 810ms;
 }
 
 footer h5 {
@@ -202,20 +348,16 @@ footer h5 {
   width: 100%;
   text-align: center;
   flex-flow: row nowrap;
-  margin-left: 10px;
+  justify-content: space-around;
 }
 .selection2__title {
   font-family: 'Shrikhand','Times New Roman', Times, serif;
   margin-left: 10px;
 }
 .selection2__like {
-  position: absolute;
-  right: 6%;
-  top: 175%;
   background-color: white;
   border: 0;
   font-size: x-large;
-  top: 3%;
   background-color: #f6f6f6;
 }
 .selection2__like:active {
@@ -397,6 +539,14 @@ body {
   margin-bottom: 30px;
   cursor: pointer;
 }
+.resto__1__all {
+  display: flex;
+  justify-content: space-between;
+}
+.resto__1__txt {
+  display: flex;
+  flex-flow: column nowrap;
+}
 .resto__1__img {
   display: flex;
   width: 100%;
@@ -432,16 +582,25 @@ body {
   width: fit-content;
 }
 .resto__1__like {
-  position: absolute;
-  right: 6%;
-  top: 175%;
   background-color: white;
   border: 0;
   font-size: x-large;
+  margin-right: 10px;
 }
-.resto__1__like:active {
-  background-clip: text;
+
+.fa-heart {
+  color: #FFF;
+  text-shadow: 0px 0px 6px  #000;
+}
+
+.fa-heart::before {
+  font-weight: bold;
+  transition: color 1s ease-out;
+}
+
+.fa-heart:hover::before {
   color: #FF79DA;
+  cursor: pointer;
 }
 
 .resto__2__img {
@@ -467,52 +626,7 @@ body {
   color: #278870;
   padding-top: 3px;
   border-radius: 5px;
-  top: 190%;
-}
-
-.resto__2__like {
-  position: absolute;
-  right: 6%;
-  top: 175%;
-  background-color: white;
-  border: 0;
-  font-size: x-large;
-  top: 225%;
-}
-
-.resto__2__like:active {
-  background-clip: text;
-  color: #FF79DA;
-}
-
-.resto__3__like {
-  position: absolute;
-  right: 6%;
-  top: 175%;
-  background-color: white;
-  border: 0;
-  font-size: x-large;
-  top: 274%;
-}
-
-.resto__3__like:active {
-  background-clip: text;
-  color: #FF79DA;
-}
-
-.resto__4__like {
-  position: absolute;
-  right: 6%;
-  top: 175%;
-  background-color: white;
-  border: 0;
-  font-size: x-large;
-  top: 324%;
-}
-
-.resto__4__like:active {
-  background-clip: text;
-  color: #FF79DA;
+  top: 193%;
 }
 
 footer {
@@ -543,6 +657,24 @@ footer a {
 .fa-solid {
   font-size: 0.8em;
   margin-right: 15px;
+}
+
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background-color: #99E2D0;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: disparition 3s 2s both;
+}
+.loader h2 {
+  color: #9356DC;
+  font-size: 2em;
+  font-family: 'Shrikhand','Times New Roman', Times, serif;
+  animation: slideTitre 2.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
