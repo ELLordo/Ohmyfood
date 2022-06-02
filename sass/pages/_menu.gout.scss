@@ -79,15 +79,15 @@
     }
     &__E:hover .entree__clic 
     {
-        animation: slide 5s ease-in-out both alternate;
+        animation: slide 5s ease-in-out both;
     }
     &__E:hover p 
     {
-        animation: slidep 5s ease-in-out both alternate;
+        animation: slidep 5s ease-in-out both ;
     }
     &__E:hover h4
     {
-        animation: slidep 5s ease-in-out both alternate;
+        animation: slidep 5s ease-in-out both ;
     }
     &__E__entier
     {   display: flex;
@@ -103,6 +103,11 @@
         margin: -14px 0 0 15px;
         border-bottom: 3px solid $color-tertiaire;
     } 
+    &__right
+    {
+        display: flex;
+        justify-content: flex-end;
+    }
     &__clic
     {
         position: relative;
@@ -159,7 +164,7 @@
     }
     &__E__prix
     {
-        margin-top: 20px; 
+        margin-top: 35px; 
         padding-right: 15px;
         margin-right: 0;
         transition: margin-right 2s;

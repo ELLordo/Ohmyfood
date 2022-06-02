@@ -71,17 +71,17 @@
 }
 
 @mixin new {
-    display: block;
+    
     position: absolute;
-    right:5%;
-    top: 144%;
+    margin-top: -180px;
+    margin-left: 65%;
     box-sizing: border-box;
     width: 100px;
     height: 30px;
     text-align: center;
     background-color: $color-tertiaire;
     color: darken($color-tertiaire , $amount: 40%);
-    padding-top: 3px;
+    
     border-radius: 5px ;
 }
 @mixin like {

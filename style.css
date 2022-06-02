@@ -175,13 +175,13 @@
   justify-content: center;
 }
 .entree__E:hover .entree__clic {
-  animation: slide 5s ease-in-out both alternate;
+  animation: slide 5s ease-in-out both;
 }
 .entree__E:hover p {
-  animation: slidep 5s ease-in-out both alternate;
+  animation: slidep 5s ease-in-out both;
 }
 .entree__E:hover h4 {
-  animation: slidep 5s ease-in-out both alternate;
+  animation: slidep 5s ease-in-out both;
 }
 .entree__E__entier {
   display: flex;
@@ -195,6 +195,10 @@
   width: 30px;
   margin: -14px 0 0 15px;
   border-bottom: 3px solid #99E2D0;
+}
+.entree__right {
+  display: flex;
+  justify-content: flex-end;
 }
 .entree__clic {
   position: relative;
@@ -244,7 +248,7 @@
   flex-flow: column;
 }
 .entree__E__prix {
-  margin-top: 20px;
+  margin-top: 35px;
   padding-right: 15px;
   margin-right: 0;
   transition: margin-right 2s;
@@ -588,17 +592,15 @@ body {
   border-radius: 20px 20px 0 0;
 }
 .resto__1__new {
-  display: block;
   position: absolute;
-  right: 5%;
-  top: 144%;
+  margin-top: -180px;
+  margin-left: 65%;
   box-sizing: border-box;
   width: 100px;
   height: 30px;
   text-align: center;
   background-color: #99E2D0;
   color: #278870;
-  padding-top: 3px;
   border-radius: 5px;
 }
 .resto__1 p {
@@ -646,17 +648,15 @@ body {
 }
 
 .resto__2__new {
-  display: block;
   position: absolute;
-  right: 5%;
-  top: 144%;
+  margin-top: -180px;
+  margin-left: 65%;
   box-sizing: border-box;
   width: 100px;
   height: 30px;
   text-align: center;
   background-color: #99E2D0;
   color: #278870;
-  padding-top: 3px;
   border-radius: 5px;
   top: 193%;
 }
