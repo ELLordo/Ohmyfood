@@ -188,7 +188,7 @@ body
         @include restauranti;
         @media screen and (min-width:992px)
         {
-            height: 70%;
+            height: 330px;
         }
     }
     &__1__new
@@ -238,7 +238,11 @@ body
 .resto__2__img
 {
     @include restauranti;
-    height: 330px;
+    height: 230px;
+    @media screen and (min-width:992px)
+    {
+        height: 330px;
+    }
 }
 
 footer
@@ -256,6 +260,7 @@ footer
     li 
     {
         margin-top: 10px;
+        cursor: pointer;
     }
     h5
     {
