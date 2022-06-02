@@ -73,16 +73,16 @@
 @mixin new {
     
     position: absolute;
-    margin-top: -180px;
+    margin-top: 20px;
     margin-left: 65%;
     box-sizing: border-box;
     width: 100px;
     height: 30px;
     text-align: center;
     background-color: $color-tertiaire;
+    border-radius: 5px;
+    padding: 5px;
     color: darken($color-tertiaire , $amount: 40%);
-    
-    border-radius: 5px ;
 }
 @mixin like {
         background-color: white;

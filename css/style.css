@@ -464,11 +464,6 @@ body {
   font-size: larger;
   cursor: pointer;
 }
-@media screen and (min-width: 992px) {
-  .pres__btn {
-    width: 30%;
-  }
-}
 .pres__btn:hover {
   background-color: #ff7997;
   box-shadow: 2px 2px 20px grey;
@@ -477,23 +472,10 @@ body {
 .choix {
   margin-top: 100px;
 }
-@media screen and (min-width: 992px) {
-  .choix {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-  }
-}
 .choix h3 {
   font-size: x-large;
   font-weight: bold;
-  margin-left: 20px;
   margin-bottom: 40px;
-}
-@media screen and (min-width: 992px) {
-  .choix h3 {
-    width: 100%;
-  }
 }
 .choix p {
   font-size: medium;
@@ -503,11 +485,6 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 30px;
-}
-@media screen and (min-width: 992px) {
-  .choix__1 {
-    width: 30%;
-  }
 }
 .choix__1__btn {
   display: flex;
@@ -543,11 +520,6 @@ body {
   justify-content: center;
   margin-top: 30px;
 }
-@media screen and (min-width: 992px) {
-  .choix__2 {
-    width: 30%;
-  }
-}
 .choix__2__btn {
   display: flex;
   box-sizing: border-box;
@@ -582,19 +554,10 @@ body {
 .resto {
   margin-top: 100px;
 }
-@media screen and (min-width: 992px) {
-  .resto {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-  }
-}
 .resto h3 {
   font-size: x-large;
   font-weight: bold;
-  margin-left: 20px;
   margin-bottom: 10px;
-  width: 100%;
 }
 .resto__1 a {
   text-decoration: none;
@@ -612,12 +575,6 @@ body {
   margin-bottom: 30px;
   cursor: pointer;
 }
-@media screen and (min-width: 992px) {
-  .resto__1 {
-    width: 48%;
-    height: 400px;
-  }
-}
 .resto__1__all {
   display: flex;
   justify-content: space-between;
@@ -634,11 +591,6 @@ body {
   border: 0;
   border-radius: 20px 20px 0 0;
 }
-@media screen and (min-width: 992px) {
-  .resto__1__img {
-    height: 70%;
-  }
-}
 .resto__1__new {
   position: absolute;
   margin-top: 20px;
@@ -651,11 +603,6 @@ body {
   border-radius: 5px;
   padding: 5px;
   color: #278870;
-}
-@media screen and (min-width: 992px) {
-  .resto__1__new {
-    margin-left: 35%;
-  }
 }
 .resto__1 p {
   margin: 15px;
@@ -699,7 +646,22 @@ body {
   object-fit: cover;
   border: 0;
   border-radius: 20px 20px 0 0;
-  height: 330px;
+  height: 230px;
+}
+
+.resto__2__new {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 65%;
+  box-sizing: border-box;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  background-color: #99E2D0;
+  border-radius: 5px;
+  padding: 5px;
+  color: #278870;
+  top: 193%;
 }
 
 footer {
