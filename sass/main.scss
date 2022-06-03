@@ -7,7 +7,7 @@
 
 body
 {
-    
+    overflow-x: hidden;
     font-family: 'Roboto','Times New Roman', Times, serif;
 }
 .main-title
@@ -27,7 +27,7 @@ body
     justify-content: center;
     margin-top: -20px;
     box-shadow:3px 3px 8px rgba(128, 128, 128, 0.382) inset;
-    cursor: pointer;  
+    cursor: pointer;
     &__img{
         margin-right: 10px;
     }
@@ -55,6 +55,14 @@ body
         {
             @include btn;
         cursor: pointer;
+        @media screen and (min-width:992px)
+        {
+            width: 30%;
+        }
+        @media screen and (min-width:762px) and (max-width:992px)
+        {
+            width: 30%;
+        }
     }
         &__btn:hover 
         {
@@ -65,12 +73,22 @@ body
 .choix
 {
     margin-top: 100px;
-    
+    @media screen and (min-width:992px)
+    {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
         h3
         {
             font-size: x-large;
             font-weight: bold;
+            margin-left: 20px;
             margin-bottom: 40px;
+            @media screen and (min-width:992px)
+            {
+                width: 100%;
+            }
         }
         p
         {
@@ -82,7 +100,10 @@ body
             display: flex;
             justify-content: center;
             margin-top: 30px;
-            
+            @media screen and (min-width:992px)
+            {
+                width: 30%;
+            }
         }
         &__1__btn
         {
@@ -102,7 +123,10 @@ body
             display: flex;
             justify-content: center;
             margin-top: 30px;
-            
+            @media screen and (min-width:992px)
+            {
+                width: 30%;
+            }
         }
         &__2__btn
         {
@@ -123,12 +147,19 @@ body
 .resto
 {
     margin-top: 100px;
-    
+    @media screen and (min-width:992px)
+    {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
     h3
     {
         font-size: x-large;
         font-weight:bold;
+        margin-left: 20px;
         margin-bottom: 10px;
+        width: 100%;
     }
     &__1 a 
     {
@@ -140,6 +171,11 @@ body
         @include restaurant;
         margin-bottom: 30px;
         cursor: pointer;
+    @media screen and (min-width:992px)
+    {
+        width: 48%;
+        height: 400px;
+    }
     }
     &__1__all
     {
@@ -153,11 +189,27 @@ body
     }
     &__1__img
     {
-        @include restauranti
+        @include restauranti;
+        @media screen and (min-width:992px)
+        {
+            height: 330px;
+        }
+        @media screen and (min-width:762px) and (max-width:992px)
+        {
+            height: 230px;
+        }
     }
     &__1__new
     {
-        @include new
+        @include new;
+        @media screen and (min-width:992px)
+        {
+            margin-left: 35%;
+        }
+        @media screen and (min-width:762px) and (max-width:992px)
+        {
+            margin-left: 80%;
+        }
     }
     &__1 p
     {
@@ -176,7 +228,8 @@ body
     &__1__like
     {
         @include like;
-        margin-right: 10px;
+        margin-right: 20px;
+        margin-top: 20px;
     }
 } 
 .fa-heart 
@@ -197,12 +250,11 @@ body
 .resto__2__img
 {
     @include restauranti;
-    height: 230px
-}
-.resto__2__new
-{
-    @include new;
-    top: 193%;
+    height: 230px;
+    @media screen and (min-width:992px)
+    {
+        height: 330px;
+    }
 }
 
 footer
@@ -220,6 +272,7 @@ footer
     li 
     {
         margin-top: 10px;
+        cursor: pointer;
     }
     h5
     {

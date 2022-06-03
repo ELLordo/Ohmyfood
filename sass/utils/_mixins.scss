@@ -64,25 +64,25 @@
 @mixin restauranti {
     display: flex;
     width: 100%;
-    height: 80%;
+    height: 75%;
     object-fit: cover;
     border:0;
     border-radius: 20px 20px 0 0 ;
 }
 
 @mixin new {
-    display: block;
+    
     position: absolute;
-    right:5%;
-    top: 144%;
+    margin-top: 20px;
+    margin-left: 65%;
     box-sizing: border-box;
     width: 100px;
     height: 30px;
     text-align: center;
     background-color: $color-tertiaire;
+    border-radius: 5px;
+    padding: 5px;
     color: darken($color-tertiaire , $amount: 40%);
-    padding-top: 3px;
-    border-radius: 5px ;
 }
 @mixin like {
         background-color: white;
@@ -110,11 +110,11 @@
         opacity: 1;
     }
     20%{
-        width: 80px;
+        width: 70px;
         opacity: 1;
     }
     80%{
-        width: 80px;
+        width: 70px;
         opacity: 1;
     }
     100%{
@@ -123,26 +123,53 @@
     }
 }
 
+@keyframes slidep
+{
+    0%{
+        width: 100%;
+    }
+    20%{
+        width: 95%;
+    }
+    80%{
+        width: 95%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
 @keyframes platI
 {
     0%{
         transform:  translateX(10px);
-
+        opacity: 0;
+        
+    }
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+        
     }
     100%{
         transform:  translateX(0px); 
+        opacity: 1;
+        
     }
 }
 @keyframes spin {
     0% {
         transform: rotate(180deg);
             opacity: 0;
-}
-40%{
+    }
+    60%{
     opacity: 0;
-}
-50%{
-    opacity: 1;}
+    }
+    70%{
+    opacity: 1;
+    }
     100% {
         transform: rotate(360deg); 
     }

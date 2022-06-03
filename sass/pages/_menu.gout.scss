@@ -1,3 +1,4 @@
+
 .header__2
 {
     display: flex;
@@ -19,6 +20,7 @@
 .header__2 h1
 {
     margin-left: -10px;
+    font-family: 'Shrikhand','Times New Roman', Times, serif; 
 }
 .back__img
 {
@@ -28,6 +30,24 @@
     height: 240px;
     object-fit: cover;
     margin-top: -15px; 
+    @media screen and (min-width:992px)
+    {
+    img 
+    {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+@media screen and (min-width:762px) and (max-width:992px)
+    {
+        img
+        {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 }
 .selection
 {
@@ -43,6 +63,10 @@
     margin-top: -33px;
     padding-top: 15px;
     margin-left: 0;
+    @media screen and (min-width:992px)
+    {
+        height: 670px;
+    }
     &__main
     {   
         display: inline-flex;
@@ -51,7 +75,14 @@
         text-align: center;
         flex-flow: row nowrap;
         justify-content: space-around;
-        
+        @media screen and (min-width:992px)
+        {
+            justify-content: space-between;
+        }
+        @media screen and (min-width:762px) and (max-width:992px)
+    {
+        justify-content: space-between;
+    }
     }
     &__title
     {
@@ -71,15 +102,47 @@
         display: flex;
     flex-flow: column;
     align-items: center;
+    @media screen and (min-width:992px)
+    {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
     }
     &__E
     {
         @include plat;
+        @media screen and (min-width:992px)
+        {
+            width: 30%;
+        }
     }
-    &__E:hover .entree__clic
+    &__E:hover .entree__clic 
     {
-        animation: slide 5s ease-in-out both alternate;
-        
+        animation: slide 5s ease-in-out both;  
+    }
+    &__E:hover p 
+    {
+        animation: slidep 5s ease-in-out both ;
+        @media screen and (min-width:992px)
+        {
+            animation: none;
+        }
+        @media screen and (min-width:762px) and (max-width:992px)
+        {
+        animation: none;
+    }
+}
+    &__E:hover h4
+    {
+        animation: slidep 5s ease-in-out both;
+        @media screen and (min-width:992px)
+        {
+            animation: none;
+        }
+        @media screen and (min-width:762px) and (max-width:992px)
+    {
+        animation: none;
+    }
     }
     &__E__entier
     {   display: flex;
@@ -95,6 +158,11 @@
         margin: -14px 0 0 15px;
         border-bottom: 3px solid $color-tertiaire;
     } 
+    &__right
+    {
+        display: flex;
+        justify-content: flex-end;
+    }
     &__clic
     {
         position: relative;
@@ -109,12 +177,14 @@
         color: #fff;
         font-weight: bold;
         font-size: x-large;
-        padding: 20px;
+        margin: 0px;
+        overflow: hidden;
     }
     :hover .entree__clic i
         {
             animation: platI 1s ease-in-out 0.2s ;
             animation: spin 1s linear ;
+            margin: 20px;
         }
     p 
     {
@@ -125,7 +195,6 @@
         overflow: hidden;
         white-space: nowrap;
         color: #787878;
-        
     }
     h3 
     {
@@ -141,7 +210,9 @@
     {
         margin-left: 10px;
         font-weight: bold;
-        
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
         margin-top: 8px;
     }
     &__E__txt
@@ -150,7 +221,7 @@
     }
     &__E__prix
     {
-        margin-top: 20px; 
+        margin-top: 35px; 
         padding-right: 15px;
         margin-right: 0;
         transition: margin-right 2s;
@@ -163,6 +234,11 @@
         width: 60%;
         height: 55px;
         padding-inline-end: 20px;
+        @media screen and (min-width:992px)
+        {
+            margin-top: 70px;
+            width: 30%;
+        }
     }
 }
 .entree__E1,.entree__E2,.entree__E3,.entree__E4,.entree__E5,.entree__E6,.entree__E7,.entree__E8,.entree__E9,.entree__E10
