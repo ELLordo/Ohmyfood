@@ -567,6 +567,11 @@ body {
     width: 30%;
   }
 }
+@media screen and (min-width: 762px) and (max-width: 992px) {
+  .pres__btn {
+    width: 30%;
+  }
+}
 .pres__btn:hover {
   background-color: #ff7997;
   box-shadow: 2px 2px 20px grey;
@@ -737,6 +742,11 @@ body {
     height: 330px;
   }
 }
+@media screen and (min-width: 762px) and (max-width: 992px) {
+  .resto__1__img {
+    height: 230px;
+  }
+}
 .resto__1__new {
   position: absolute;
   margin-top: 20px;
@@ -753,6 +763,11 @@ body {
 @media screen and (min-width: 992px) {
   .resto__1__new {
     margin-left: 35%;
+  }
+}
+@media screen and (min-width: 762px) and (max-width: 992px) {
+  .resto__1__new {
+    margin-left: 80%;
   }
 }
 .resto__1 p {

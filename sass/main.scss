@@ -59,6 +59,10 @@ body
         {
             width: 30%;
         }
+        @media screen and (min-width:762px) and (max-width:992px)
+        {
+            width: 30%;
+        }
     }
         &__btn:hover 
         {
@@ -190,6 +194,10 @@ body
         {
             height: 330px;
         }
+        @media screen and (min-width:762px) and (max-width:992px)
+        {
+            height: 230px;
+        }
     }
     &__1__new
     {
@@ -197,6 +205,10 @@ body
         @media screen and (min-width:992px)
         {
             margin-left: 35%;
+        }
+        @media screen and (min-width:762px) and (max-width:992px)
+        {
+            margin-left: 80%;
         }
     }
     &__1 p
