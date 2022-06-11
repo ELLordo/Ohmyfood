@@ -528,6 +528,9 @@ body {
 .main-btn__img {
   margin-right: 10px;
 }
+.main-btn .fa-solid {
+  font-size: 1em;
+}
 
 .pres {
   display: flex;
@@ -598,6 +601,9 @@ body {
     width: 100%;
   }
 }
+.choix .fa-solid {
+  font-size: 1.2em;
+}
 .choix p {
   font-size: medium;
   font-weight: bold;
@@ -625,6 +631,9 @@ body {
   align-items: center;
   cursor: pointer;
 }
+.choix__1__btn:hover {
+  background-color: #f3edfe;
+}
 .choix__1__btn__num {
   display: flex;
   justify-content: center;
@@ -639,46 +648,6 @@ body {
   margin-left: -12px;
 }
 .choix__1__btn__txt {
-  margin-left: 20px;
-}
-.choix__2 {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-@media screen and (min-width: 992px) {
-  .choix__2 {
-    width: 30%;
-  }
-}
-.choix__2__btn {
-  display: flex;
-  box-sizing: border-box;
-  width: 95%;
-  height: 70px;
-  border: 0;
-  border-radius: 20px;
-  box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.425);
-  background-color: #f7f6f6;
-  padding: 3px;
-  align-items: center;
-  background-color: #f4edfe;
-  cursor: pointer;
-}
-.choix__2__btn__num {
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-  width: 25px;
-  height: 25px;
-  border-radius: 25px;
-  background-color: #9356DC;
-  align-items: center;
-  color: white;
-  margin-right: 20px;
-  margin-left: -12px;
-}
-.choix__2__btn__txt {
   margin-left: 20px;
 }
 

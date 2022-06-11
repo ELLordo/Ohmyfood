@@ -31,6 +31,10 @@ body
     &__img{
         margin-right: 10px;
     }
+    .fa-solid
+    {
+        font-size: 1em;
+    }
 }
 .pres
 {   display: flex;
@@ -90,6 +94,10 @@ body
                 width: 100%;
             }
         }
+        .fa-solid
+        {
+            font-size: 1.2em;
+        }
         p
         {
             font-size:medium;
@@ -110,35 +118,15 @@ body
             @include fonctionnement;
             cursor: pointer;
         }
+        &__1__btn:hover
+        {
+            background-color: rgb(243, 237, 254)
+        }
         &__1__btn__num
         {
             @include num-btn;
         }
         &__1__btn__txt
-        {
-            margin-left: 20px;
-        }
-        &__2
-        {
-            display: flex;
-            justify-content: center;
-            margin-top: 30px;
-            @media screen and (min-width:992px)
-            {
-                width: 30%;
-            }
-        }
-        &__2__btn
-        {
-            @include fonctionnement;
-            background-color: rgb(244, 237, 254);
-            cursor: pointer;
-        }
-        &__2__btn__num
-        {
-            @include num-btn;
-        }
-        &__2__btn__txt
         {
             margin-left: 20px;
         }
